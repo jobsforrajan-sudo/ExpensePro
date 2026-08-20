@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "UserProfile": {
+      "collection": "users",
+      "fields": {
+        "id": { "type": "string", "description": "User ID" },
+        "name": { "type": "string", "description": "User display name" },
+        "email": { "type": "string", "description": "User email address" },
+        "currency": { "type": "string", "description": "Default currency code" },
+        "currencySymbol": { "type": "string", "description": "Currency symbol" },
+        "monthlySalary": { "type": "number", "description": "Monthly net salary" },
+        "taxDeductionPct": { "type": "number", "description": "Tax deduction percentage" },
+        "budgetAlertThreshold": { "type": "number", "description": "Alert threshold percentage" },
+        "categoryLimits": { "type": "map", "description": "Category spending caps" },
+        "salaryAllocation": { "type": "map", "description": "50/20/15/15 allocation rule" },
+        "investmentPreferences": { "type": "map", "description": "Investment risk and preferences" }
+      }
+    },
+    "Expense": {
+      "collection": "users/{userId}/expenses",
+      "fields": {
+        "id": { "type": "string", "description": "Expense ID" },
+        "name": { "type": "string", "description": "Expense name / merchant" },
+        "amount": { "type": "number", "description": "Amount" },
+        "date": { "type": "string", "description": "Date (YYYY-MM-DD)" },
+        "category": { "type": "string", "description": "Expense category" },
+        "paymentMethod": { "type": "string", "description": "Payment method" },
+        "notes": { "type": "string", "description": "Optional notes" },
+        "isRecurring": { "type": "boolean", "description": "Is recurring subscription" },
+        "recurringFrequency": { "type": "string", "description": "Frequency" },
+        "nextDueDate": { "type": "string", "description": "Next due date" },
+        "createdAt": { "type": "number", "description": "Creation timestamp" },
+        "updatedAt": { "type": "number", "description": "Updated timestamp" }
+      }
+    },
+    "FinancialGoal": {
+      "collection": "users/{userId}/goals",
+      "fields": {
+        "id": { "type": "string", "description": "Goal ID" },
+        "title": { "type": "string", "description": "Goal title" },
+        "category": { "type": "string", "description": "Goal category" },
+        "targetAmount": { "type": "number", "description": "Target amount" },
+        "currentAmount": { "type": "number", "description": "Current amount saved" },
+        "targetDate": { "type": "string", "description": "Target date" },
+        "icon": { "type": "string", "description": "Icon identifier" },
+        "notes": { "type": "string", "description": "Optional notes" }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ExpensePro",
+  "description": "Enterprise-grade Expense Tracker & Wealth Planning Platform with Salary Breakdown, SIP & Compound Interest Projections, Budget Alerts, and Cloud Sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
