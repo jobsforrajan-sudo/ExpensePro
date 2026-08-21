@@ -120,7 +120,7 @@ export const INITIAL_EXPENSES: Expense[] = [
     amount: 4850,
     date: formatDate(2),
     category: 'Groceries & Food',
-    paymentMethod: 'Digital Wallet',
+    paymentMethod: 'UPI',
     notes: 'Weekly groceries: olive oil, salmon, organic veggies, staples.',
     isRecurring: false,
     attachment: {
@@ -193,7 +193,7 @@ export const INITIAL_EXPENSES: Expense[] = [
     amount: 2400,
     date: formatDate(8),
     category: 'Transportation',
-    paymentMethod: 'Digital Wallet',
+    paymentMethod: 'UPI',
     notes: 'Metropolitan commute and airport cab rides.',
     isRecurring: false,
     createdAt: Date.now() - 691200000,

@@ -19,7 +19,8 @@ import {
   Printer,
   User,
   Database,
-  CloudCheck
+  CloudCheck,
+  IndianRupee
 } from 'lucide-react';
 import { User as FirebaseUser } from 'firebase/auth';
 import { AppTab, SyncStatus, UserProfile } from '../types';
@@ -72,7 +73,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const tabs: { id: AppTab; label: string; icon: React.ReactNode }[] = [
     { id: 'dashboard', label: 'Dashboard', icon: <LayoutDashboard className="w-4 h-4" /> },
-    { id: 'expenses', label: 'Expenses', icon: <Receipt className="w-4 h-4" /> },
+    { id: 'expenses', label: 'Expenses', icon: <IndianRupee className="w-4 h-4" /> },
     { id: 'salary', label: 'Salary & Wealth', icon: <PieChart className="w-4 h-4" /> },
     { id: 'goals', label: 'Goals', icon: <Target className="w-4 h-4" /> },
     { id: 'recurring', label: 'Recurring', icon: <CalendarClock className="w-4 h-4" /> },

@@ -51,11 +51,12 @@ import {
   Target, 
   CalendarClock, 
   BarChart3, 
-  Plus,
-  WifiOff,
-  CheckCircle2,
-  AlertCircle,
-  Smartphone
+  Plus, 
+  WifiOff, 
+  CheckCircle2, 
+  AlertCircle, 
+  Smartphone,
+  IndianRupee
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
@@ -530,7 +531,7 @@ export default function App() {
             }`}
           >
             <div className="relative flex items-center justify-center">
-              <Receipt className={`w-5 h-5 transition-transform duration-150 ${currentTab === 'expenses' ? 'scale-110' : ''}`} />
+              <IndianRupee className={`w-5 h-5 transition-transform duration-150 ${currentTab === 'expenses' ? 'scale-110' : ''}`} />
               {currentTab === 'expenses' && (
                 <span className="absolute -top-1.5 w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400" />
               )}

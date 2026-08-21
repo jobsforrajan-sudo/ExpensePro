@@ -12,7 +12,7 @@ import {
   Lightbulb,
   Sparkles,
   Sliders,
-  DollarSign,
+  IndianRupee,
   ChevronRight,
   ShieldCheck,
   Zap,

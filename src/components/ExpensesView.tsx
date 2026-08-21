@@ -14,7 +14,8 @@ import {
   Square,
   Sparkles,
   Download,
-  AlertCircle
+  AlertCircle,
+  IndianRupee
 } from 'lucide-react';
 import { Expense, ExpenseCategory, PaymentMethod, UserProfile } from '../types';
 import { formatCurrency, formatDateDisplay } from '../utils/calculations';
@@ -145,10 +146,13 @@ export const ExpensesView: React.FC<ExpensesViewProps> = ({
       {/* Top Header & Metrics Banner */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-black text-slate-900 dark:text-white tracking-tight">
+          <h1 className="text-2xl font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-2.5">
+            <div className="p-2 bg-blue-50 dark:bg-blue-950/60 rounded-xl text-blue-600 dark:text-blue-400 border border-blue-100 dark:border-blue-900/60">
+              <IndianRupee className="w-6 h-6" />
+            </div>
             Transaction Ledger & Expenses
           </h1>
-          <p className="text-xs text-slate-500">
+          <p className="text-xs text-slate-500 mt-1">
             Filter, audit, and organize your expenses with receipt verification
           </p>
         </div>
@@ -220,10 +224,10 @@ export const ExpensesView: React.FC<ExpensesViewProps> = ({
               className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-xl text-xs text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="ALL">All Payments</option>
+              <option value="UPI">UPI</option>
               <option value="Credit Card">Credit Card</option>
               <option value="Debit Card">Debit Card</option>
               <option value="Bank Transfer">Bank Transfer</option>
-              <option value="Digital Wallet">Digital Wallet</option>
               <option value="Cash">Cash</option>
               <option value="Cryptocurrency">Crypto</option>
             </select>

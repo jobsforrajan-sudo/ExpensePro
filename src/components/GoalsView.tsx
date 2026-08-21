@@ -11,7 +11,7 @@ import {
   TrendingUp, 
   Calendar, 
   Trash2, 
-  DollarSign,
+  IndianRupee,
   CheckCircle2,
   X,
   Wallet,

@@ -1,4 +1,5 @@
 export type PaymentMethod = 
+  | 'UPI'
   | 'Credit Card'
   | 'Debit Card'
   | 'Bank Transfer'
